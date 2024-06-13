@@ -1,0 +1,29 @@
+{
+//E is the node pointer
+E----)New(Node)
+//dummy root node as start node
+//H is heap for all live nodes,H is min-heap for minimization and max-heap
+//for maximization problems
+while(true)
+{
+if(E is a final leaf) then
+{
+//E is a optional solution
+Print(Path E to the Root);
+return;
+}
+Expand(E);
+if(H is empty) then //if no element is present in heap
+{
+print("There is no solution")
+return;
+}
+E--------->delete_top(H);
+}
+}
+Expand(E)
+{
+Generate all children of E;
+Compute error,Cost of Each child;
+Insert each child into the Heap,H;
+}
